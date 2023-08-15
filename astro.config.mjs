@@ -4,20 +4,18 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel/serverless";
 
+import image from "@astrojs/image";
 
 // https://astro.build/config
-import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://astrofy-template.netlify.app',
-  integrations: [mdx(), sitemap(), tailwind(), image(
-    {
-      serviceEntryPoint: '@astrojs/image/sharp',
-      cacheDir: "./.cache/image",
-      logLevel: 'debug',
-    }
-  )],
-    output: "server",
-    adapter: vercel(),
+  integrations: [mdx(), sitemap(), tailwind(), image({
+    serviceEntryPoint: '@astrojs/image/sharp',
+    cacheDir: "./.cache/image",
+    logLevel: 'debug'
+  })],
+  output: "server",
+  adapter: vercel()
 });
