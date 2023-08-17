@@ -10,9 +10,29 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSideba
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="night">
   <head>
     <BaseHead title={title} description={description} image={image} />
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get stored theme from localStorage or default to 'dark'
+        let currentTheme = localStorage.getItem('theme') || 'night';
+    
+        // Set the theme on initial load
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    
+        // Initialize checkbox state based on the theme
+        let themeToggle = document.getElementById('themeToggle');
+        themeToggle.checked = currentTheme === 'cmyk';
+    
+        themeToggle.addEventListener('change', function() {
+          currentTheme = themeToggle.checked ? 'cmyk' : 'night';
+          document.documentElement.setAttribute('data-theme', currentTheme);
+          localStorage.setItem('theme', currentTheme);
+        });
+      });
+    </script>
+    
   </head>
   <body>
     <div class="bg-base-100 drawer lg:drawer-open">
