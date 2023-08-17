@@ -58,7 +58,7 @@
    import { DarkTheme } from "../store";
 
 // Function to set the theme and save preference to localStorage
-function setTheme(newTheme) {
+function setTheme(newTheme: any) {
     DarkTheme.set(newTheme);
     localStorage.setItem('theme', newTheme);
 }
