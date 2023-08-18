@@ -5,7 +5,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">My Projects</div>
   </div>
 
   <HorizontalCard
@@ -24,29 +24,30 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     url="https://garden-site-one.vercel.app"
   />
 
-  <div>
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+  </div> -->
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="ALGS Save The Date"
+    img="/algs_logo.svg"
+    desc="A neomorphism website I built with Astro.js to invite my brothers to the 2023 ALGS World Championship (works best on chrome browsers)."
+    url="https://save-the-date-algs-2023.vercel.app"
+    badge="Astro"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Digital Business Card"
+    img="/digital_card_logo.png"
+    desc="A digital business card I built with only HTML and CSS."
+    url="https://quiet-torte-d99c02.netlify.app"
+    badge="HTML/CSS"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Stouty Swat"
+    img="/swap_logo.png"
+    desc="A fully functioning web 3 application built on the ethereum blockchain. Includes the ability to connect a crypto wallet and swap tokens."
+    url="https://stoutyswap.netlify.app"
   />
 </BaseLayout>
