@@ -53,37 +53,4 @@
 
 </div>
 
-<!-- <script>
-   import { DarkTheme } from "../store";
-
-// Function to set the theme and save preference to localStorage
-function setTheme(newTheme: any) {
-    DarkTheme.set(newTheme);
-    localStorage.setItem('theme', newTheme);
-}
-
-// On initial load, get the theme from localStorage or use default 'night'
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'night';
-    setTheme(savedTheme);
-});
-
-// Listen to changes in the store to apply the theme
-DarkTheme.subscribe(currentTheme => {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-});
-
-// Select the theme toggle button
-const themeToggleButtons = document.querySelectorAll('.theme-toggle');
-
-// Add click event listeners
-themeToggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const currentTheme = DarkTheme.get();
-        const newTheme = currentTheme === 'night' ? 'cmyk' : 'night';
-        setTheme(newTheme);
-    });
-    // ... (keep the rest of your button logic here)
-});
-</script> -->
 
