@@ -7,12 +7,22 @@ import gardenLogo from "../assets/gardensite_logo.png"
 import algsLogo from "../assets/algs_logo.png"
 import swapLogo from "../assets/swap_logo.png"
 import digitalCardLogo from "../assets/business_card_logo.png"
+import LPDrill from "../assets/lp-drill.png"
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
     <div class="text-3xl w-full font-bold mb-5">My Projects</div>
   </div>
+
+    <HorizontalCard
+    title="Lone Peak Drill Team"
+    img={LPDrill}
+    desc="A blazing fast website I built for the Lone Peak high school drill team. Built entirely with Astro.js."
+    url="https://lp-drill-astro.vercel.app/"
+    badge="Astro"
+  />
+
 
   <HorizontalCard
     title="Social Me Mobile Therapy"

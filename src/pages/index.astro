@@ -9,7 +9,7 @@ const last_posts = posts.slice(0, 3);
 
 import someLogo from "../assets/some_logo.png"
 import gardenLogo from "../assets/gardensite_logo.png"
-import algsLogo from "../assets/algs_logo.png"
+import LPDrill from "../assets/lp-drill.png"
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -38,6 +38,16 @@ import algsLogo from "../assets/algs_logo.png"
   </div>
 
   <HorizontalCard
+    title="Lone Peak Drill Team"
+    img={LPDrill}
+    desc="A blazing fast website I built for the Lone Peak high school drill team. Built entirely with Astro.js."
+    url="https://lp-drill-astro.vercel.app/"
+    badge="Astro"
+  />
+  <div class="divider my-0"></div>
+
+
+  <HorizontalCard
   title="Social Me Mobile Therapy"
   img={someLogo}
   desc="A website I built for a client that provides mobile therapy mental health services for people struggling with OCD and anxiety."
@@ -52,14 +62,9 @@ import algsLogo from "../assets/algs_logo.png"
     badge="Next.js/Full Stack"
     url="https://garden-site-one.vercel.app"
   />
+
   <div class="divider my-0"></div>
-  <HorizontalCard
-  title="ALGS Save The Date"
-  img={algsLogo}
-  desc="A neomorphism website I built with Astro.js to invite my brothers to the 2023 ALGS World Championship (works best on chrome browsers)."
-  url="https://save-the-date-algs-2023.vercel.app"
-  badge="Astro"
-/>
+
  
 
   
