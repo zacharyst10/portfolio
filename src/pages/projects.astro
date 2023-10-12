@@ -1,6 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+
+import someLogo from "../assets/some_logo.png"
+import gardenLogo from "../assets/gardensite_logo.png"
+import algsLogo from "../assets/algs_logo.png"
+import swapLogo from "../assets/swap_logo.png"
+import digitalCardLogo from "../assets/business_card_logo.png"
 ---
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
@@ -10,7 +16,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
   <HorizontalCard
     title="Social Me Mobile Therapy"
-    img="/some_logo.png"
+    img={someLogo}
     desc="A website I built for a client that provides mobile therapy mental health services for people struggling with OCD and anxiety."
     url="https://www.someslc.com"
     badge="Astro"
@@ -18,7 +24,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Garden Site"
-    img="/gardensite_logo.png"
+    img={gardenLogo}
     desc="My never ending passion project. A full stack web app built with Next.js, Tailwind, Prisma, and tRPC."
     badge="Next.js/Full Stack"
     url="https://garden-site-one.vercel.app"
@@ -32,7 +38,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
   <HorizontalCard
     title="ALGS Save The Date"
-    img="/algs_logo.png"
+    img={algsLogo}
     desc="A neomorphism website I built with Astro.js to invite my brothers to the 2023 ALGS World Championship (works best on chrome browsers)."
     url="https://save-the-date-algs-2023.vercel.app"
     badge="Astro"
@@ -40,7 +46,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Digital Business Card"
-    img="/business_card_logo.png"
+    img={digitalCardLogo}
     desc="A digital business card I built with only HTML and CSS."
     url="https://quiet-torte-d99c02.netlify.app"
     badge="HTML/CSS"
@@ -48,7 +54,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Stouty Swat"
-    img="/swap_logo.png"
+    img={swapLogo}
     badge="React"
     desc="A fully functioning web 3 application built on the ethereum blockchain. Includes the ability to connect a crypto wallet and swap tokens."
     url="https://stoutyswap.netlify.app"
